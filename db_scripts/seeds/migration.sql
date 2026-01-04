@@ -1,0 +1,113 @@
+INSERT INTO tbl_collections (collection_set_name, release_date, total_cards_in_collection)
+VALUES 
+('Base Set', '1999-01-09', 102),
+('Jungle', '1999-06-16', 64),
+('Fossil', '1999-10-10', 62);
+
+INSERT INTO tbl_types (type_name)
+VALUES 
+('Grass'),
+('Fire'),
+('Water'),
+('Lightning'),
+('Psychic'),
+('Fighting'),
+('Colorless');
+
+INSERT INTO tbl_stages (stage_name)
+VALUES 
+('Basic'),
+('Stage 1'),
+('Stage 2');
+
+INSERT INTO tbl_cards (hp, name_stage, info, attack, damage, weak, resis, retreat, collection_id, type_id, stage_id)
+VALUES
+(60, 'Bulbasaur', 'Seed Pokémon', 'Vine Whip', '20', 'Fire', 'None', '1', 1, 1, 1),
+(50, 'Charmander', 'Lizard Pokémon', 'Ember', '30', 'Water', 'None', '1', 1, 2, 1),
+(50, 'Squirtle', 'Tiny Turtle Pokémon', 'Bubble', '20', 'Lightning', 'None', '1', 1, 3, 1),
+(90, 'Pikachu', 'Mouse Pokémon', 'Thunder Shock', '30', 'Fighting', 'None', '1', 2, 1, 1),
+(100, 'Snorlax', 'Sleeping Pokémon', 'Body Slam', '50', 'Fighting', 'None', '3', 2, 7, 1),
+(120, 'Gengar', 'Shadow Pokémon', 'Nightmare', '60', 'Darkness', 'Fighting', '2', 3, 5, 2);
+INSERT INTO tbl_cards (hp, name_stage, info, attack, damage, weak, resis, retreat, collection_id, type_id, stage_id) VALUES
+(60, 'Bulbasaur', 'Seed Pokémon', 'Vine Whip', '20', 'Fire', 'None', '1', 1, 1, 1),
+(50, 'Charmander', 'Lizard Pokémon', 'Ember', '30', 'Water', 'None', '1', 1, 2, 1),
+(50, 'Squirtle', 'Tiny Turtle Pokémon', 'Bubble', '20', 'Lightning', 'None', '1', 1, 3, 1),
+(40, 'Caterpie', 'Worm Pokémon', 'String Shot', '10', 'Fire', 'None', '1', 1, 1, 1),
+(70, 'Ivysaur', 'Seed Pokémon', 'Razor Leaf', '30', 'Fire', 'None', '2', 1, 1, 2),
+(80, 'Charmeleon', 'Flame Pokémon', 'Flamethrower', '50', 'Water', 'None', '2', 1, 2, 2),
+(80, 'Wartortle', 'Turtle Pokémon', 'Water Gun', '40', 'Lightning', 'None', '2', 1, 3, 2),
+(90, 'Pikachu', 'Mouse Pokémon', 'Thunder Shock', '30', 'Fighting', 'None', '1', 2, 1, 1),
+(100, 'Raichu', 'Mouse Pokémon', 'Thunderbolt', '60', 'Fighting', 'None', '2', 2, 1, 2),
+(60, 'Jigglypuff', 'Balloon Pokémon', 'Sing', '20', 'Fighting', 'Psychic', '1', 2, 7, 1),
+(100, 'Snorlax', 'Sleeping Pokémon', 'Body Slam', '50', 'Fighting', 'None', '3', 2, 7, 1),
+(120, 'Gengar', 'Shadow Pokémon', 'Nightmare', '60', 'Psychic', 'Fighting', '2', 3, 5, 2),
+(90, 'Machop', 'Superpower Pokémon', 'Karate Chop', '40', 'Psychic', 'None', '1', 3, 6, 1),
+(120, 'Machamp', 'Superpower Pokémon', 'Seismic Toss', '60', 'Psychic', 'None', '3', 3, 6, 3),
+(70, 'Eevee', 'Evolution Pokémon', 'Quick Attack', '30', 'Fighting', 'None', '1', 2, 7, 1),
+(100, 'Vaporeon', 'Bubble Jet Pokémon', 'Water Gun', '50', 'Lightning', 'None', '2', 3, 3, 2),
+(100, 'Jolteon', 'Lightning Pokémon', 'Pin Missile', '60', 'Fighting', 'None', '2', 2, 1, 2),
+(100, 'Flareon', 'Flame Pokémon', 'Flamethrower', '60', 'Water', 'None', '2', 1, 2, 2),
+(90, 'Aerodactyl', 'Fossil Pokémon', 'Wing Attack', '40', 'Lightning', 'Fighting', '2', 3, 7, 1),
+(110, 'Dragonite', 'Dragon Pokémon', 'Hyper Beam', '70', 'Colorless', 'None', '3', 2, 7, 3);
+INSERT INTO tbl_cards (hp, name_stage, info, attack, damage, weak, resis, retreat, collection_id, type_id, stage_id) VALUES
+(70, 'Oddish', 'Weed Pokémon', 'Absorb', '20', 'Fire', 'None', '1', 2, 1, 1),
+(90, 'Gloom', 'Weed Pokémon', 'Poison Powder', '30', 'Fire', 'None', '2', 1, 2, 2),
+(110, 'Vileplume', 'Flower Pokémon', 'Solar Beam', '60', 'Fire', 'None', '2', 1, 2, 3),
+(60, 'Meowth', 'Scratch Cat Pokémon', 'Pay Day', '20', 'Fighting', 'None', '1', 2, 7, 1),
+(90, 'Persian', 'Classy Cat Pokémon', 'Slash', '40', 'Fighting', 'None', '2', 2, 7, 2),
+(80, 'Psyduck', 'Duck Pokémon', 'Confusion', '20', 'Lightning', 'None', '1', 3, 3, 1),
+(100, 'Golduck', 'Duck Pokémon', 'Hydro Pump', '50', 'Lightning', 'None', '2', 3, 3, 2),
+(60, 'Abra', 'Psi Pokémon', 'Teleport', 'None', 'Psychic', 'None', '1', 3, 5, 1),
+(90, 'Kadabra', 'Psi Pokémon', 'Confusion', '30', 'Psychic', 'None', '2', 3, 5, 2),
+(110, 'Alakazam', 'Psi Pokémon', 'Psychic', '60', 'Psychic', 'None', '3', 3, 5, 3),
+(70, 'Geodude', 'Rock Pokémon', 'Tackle', '20', 'Grass', 'None', '1', 3, 6, 1),
+(90, 'Graveler', 'Rock Pokémon', 'Rock Throw', '40', 'Grass', 'None', '2', 3, 6, 2),
+(120, 'Golem', 'Megaton Pokémon', 'Explosion', '80', 'Grass', 'None', '3', 3, 6, 3),
+(60, 'Gastly', 'Gas Pokémon', 'Lick', '10', 'Psychic', 'None', '1', 3, 5, 1),
+(80, 'Haunter', 'Gas Pokémon', 'Nightmare', '30', 'Psychic', 'None', '2', 3, 5, 2),
+(120, 'Onix', 'Rock Snake Pokémon', 'Rock Throw', '40', 'Grass', 'None', '3', 3, 6, 1),
+(100, 'Hitmonlee', 'Kicking Pokémon', 'Stretch Kick', '50', 'Psychic', 'None', '2', 3, 6, 1),
+(100, 'Hitmonchan', 'Punching Pokémon', 'Special Punch', '50', 'Psychic', 'None', '2', 3, 6, 1),
+(90, 'Scyther', 'Mantis Pokémon', 'Slash', '30', 'Fire', 'None', '1', 2, 1, 1),
+(110, 'Pinsir', 'Stag Beetle Pokémon', 'Guillotine', '60', 'Fire', 'None', '2', 1, 1, 1),
+(60, 'Magikarp', 'Fish Pokémon', 'Splash', 'None', 'Lightning', 'None', '1', 3, 3, 1),
+(90, 'Gyarados', 'Atrocious Pokémon', 'Dragon Rage', '50', 'Lightning', 'None', '2', 3, 3, 2),
+(120, 'Lapras', 'Transport Pokémon', 'Water Gun', '40', 'Lightning', 'None', '3', 3, 3, 1),
+(70, 'Cubone', 'Lonely Pokémon', 'Bone Club', '20', 'Grass', 'None', '1', 3, 6, 1),
+(90, 'Marowak', 'Bone Keeper Pokémon', 'Bonemerang', '40', 'Grass', 'None', '2', 3, 6, 2),
+(100, 'Kangaskhan', 'Parent Pokémon', 'Comet Punch', '40', 'Fighting', 'None', '2', 2, 7, 1),
+(110, 'Tauros', 'Wild Bull Pokémon', 'Rampage', '50', 'Fighting', 'None', '2', 2, 7, 1),
+(120, 'Zapdos', 'Electric Pokémon', 'Thunder', '70', 'Fighting', 'None', '3', 2, 2, 3),
+(120, 'Moltres', 'Flame Pokémon', 'Fire Blast', '70', 'Water', 'None', '3', 1, 2, 3),
+(120, 'Articuno', 'Freeze Pokémon', 'Blizzard', '70', 'Lightning', 'None', '3', 3, 3, 3);
+INSERT INTO tbl_cards (hp, name_stage, info, attack, damage, weak, resis, retreat, collection_id, type_id, stage_id) VALUES
+(70, 'Sandshrew', 'Mouse Pokémon', 'Scratch', '20', 'Water', 'None', '1', 1, 6, 1),
+(90, 'Sandslash', 'Mouse Pokémon', 'Slash', '40', 'Water', 'None', '2', 1, 6, 2),
+(60, 'Diglett', 'Mole Pokémon', 'Dig', '20', 'Grass', 'None', '1', 3, 6, 1),
+(80, 'Dugtrio', 'Mole Pokémon', 'Earthquake', '50', 'Grass', 'None', '2', 3, 6, 2),
+(70, 'Magnemite', 'Magnet Pokémon', 'Thunder Wave', '20', 'Fighting', 'None', '1', 2, 2, 1),
+(90, 'Magneton', 'Magnet Pokémon', 'Selfdestruct', '60', 'Fighting', 'None', '2', 2, 2, 2),
+(60, 'Voltorb', 'Ball Pokémon', 'Tackle', '20', 'Fighting', 'None', '1', 2, 2, 1),
+(80, 'Electrode', 'Ball Pokémon', 'Explosion', '70', 'Fighting', 'None', '2', 2, 2, 2),
+(70, 'Koffing', 'Poison Gas Pokémon', 'Smog', '20', 'Psychic', 'None', '1', 3, 5, 1),
+(90, 'Weezing', 'Poison Gas Pokémon', 'Sludge', '40', 'Psychic', 'None', '2', 3, 5, 2),
+(60, 'Rhyhorn', 'Spikes Pokémon', 'Horn Attack', '30', 'Grass', 'None', '2', 3, 6, 1),
+(100, 'Rhydon', 'Drill Pokémon', 'Horn Drill', '60', 'Grass', 'None', '3', 3, 6, 2),
+(70, 'Horsea', 'Dragon Pokémon', 'Smokescreen', '20', 'Lightning', 'None', '1', 3, 3, 1),
+(90, 'Seadra', 'Dragon Pokémon', 'Water Gun', '40', 'Lightning', 'None', '2', 3, 3, 2),
+(120, 'Seaking', 'Goldfish Pokémon', 'Horn Attack', '50', 'Lightning', 'None', '2', 3, 3, 2),
+(60, 'Staryu', 'Star Shape Pokémon', 'Slap', '20', 'Lightning', 'None', '1', 3, 3, 1),
+(90, 'Starmie', 'Mysterious Pokémon', 'Recover', '40', 'Lightning', 'None', '2', 3, 3, 2),
+(70, 'Shellder', 'Bivalve Pokémon', 'Clamp', '20', 'Lightning', 'None', '1', 3, 3, 1),
+(100, 'Cloyster', 'Bivalve Pokémon', 'Spike Cannon', '50', 'Lightning', 'None', '2', 3, 3, 2),
+(60, 'Krabby', 'River Crab Pokémon', 'Vice Grip', '20', 'Lightning', 'None', '1', 3, 3, 1),
+(90, 'Kingler', 'Pincer Pokémon', 'Crabhammer', '50', 'Lightning', 'None', '2', 3, 3, 2),
+(70, 'Exeggcute', 'Egg Pokémon', 'Hypnosis', '20', 'Fire', 'None', '1', 1, 1, 1),
+(100, 'Exeggutor', 'Coconut Pokémon', 'Stomp', '50', 'Fire', 'None', '2', 1, 1, 2),
+(60, 'Cubone', 'Lonely Pokémon', 'Headbutt', '20', 'Grass', 'None', '1', 3, 6, 1),
+(90, 'Marowak', 'Bone Keeper Pokémon', 'Bone Club', '40', 'Grass', 'None', '2', 3, 6, 2),
+(120, 'Chansey', 'Egg Pokémon', 'Double-Edge', '80', 'Fighting', 'None', '2', 2, 7, 1),
+(100, 'Mr. Mime', 'Barrier Pokémon', 'Meditate', '40', 'Psychic', 'None', '2', 3, 5, 1),
+(120, 'Ditto', 'Transform Pokémon', 'Transform', 'None', 'Fighting', 'None', '1', 2, 7, 1),
+(130, 'Mewtwo', 'Genetic Pokémon', 'Psychic', '70', 'Psychic', 'None', '3', 3, 5, 3),
+(100, 'Mew', 'New Species Pokémon', 'Pound', '40', 'Psychic', 'None', '3', 3, 5, 1);
