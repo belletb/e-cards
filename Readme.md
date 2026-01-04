@@ -1,9 +1,7 @@
 # Projeto E-Cards Pokémon – Curso GenIA & Dados (DIO)
 
 ## Descrição
-Este projeto foi desenvolvido como parte do curso GenIA e Dados da DIO.  
-O objetivo é criar e manipular um banco de dados relacional em PostgreSQL para gerenciar coleções de cartas Pokémon.  
-O projeto inclui scripts SQL para criação de tabelas, inserção em massa de dados e automação de migrações.
+Este projeto foi desenvolvido como parte do curso GenIA e Dados da DIO. O objetivo é criar e manipular um banco de dados relacional em PostgreSQL para gerenciar coleções de cartas Pokémon. O projeto inclui scripts SQL para criação de tabelas, inserção em massa de dados e automação de migrações.
 
 
 ## Funcionalidades
