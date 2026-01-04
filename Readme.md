@@ -19,10 +19,13 @@ Este projeto foi desenvolvido como parte do curso GenIA e Dados da DIO. O objeti
 
 
 ## Estrutura de Pastas
-db_scripts/
-├── tables/           # Scripts de criação das tabelas
-├── seeds/            # Inserção de dados e migrações
-└── views/            # Views para consultas simplificadas
+
+| Pasta       | Conteúdo                                |
+|-------------|-----------------------------------------|
+| schema/     | Scripts de criação das tabelas          |
+| seeds/      | Inserção de dados iniciais              |
+| migrations/ | Arquivos de migração gerados            |
+| views/      | Views para consultas simplificadas      |
 
 ## Como Executar
 1. Clone o repositório:
